@@ -16,11 +16,24 @@ class _TaskDialogState extends State<TaskDialog> {
   Widget build(BuildContext context) {
     return Form(
       key: widget.parent.formKey,
-      child: TextFormField(
-        initialValue: widget.parent.title,
-        decoration: InputDecoration(
-          labelText: 'Title',
-          suffixIcon: DropdownButtonHideUnderline(
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            child: TextFormField(
+              initialValue: widget.parent.title,
+              decoration: InputDecoration(
+                labelText: 'Title',
+              ),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Please enter a title';
+                }
+                widget.parent.title = value.toString();
+                return null;
+              },
+            ),
+          ),
+          DropdownButtonHideUnderline(
             child: DropdownButton<Color>(
               value: widget.parent.color,
               items: <Color>[
@@ -46,16 +59,8 @@ class _TaskDialogState extends State<TaskDialog> {
               },
             ),
           )
-          
-        ),
-        validator: (value) {
-          if (value.isEmpty) {
-            return 'Please enter a title';
-          }
-          widget.parent.title = value.toString();
-          return null;
-        },
-      ),
+        ],
+      )
     );
   }
 }

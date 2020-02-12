@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'task.dart';
+import 'package:task_progress/models/task.dart';
 
 class CompletionMeter extends StatefulWidget {
   final Task task;

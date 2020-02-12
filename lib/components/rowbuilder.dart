@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'task.dart';
-import 'detailed.dart';
+import 'package:task_progress/models/task.dart';
+import 'package:task_progress/screens/detailed.dart';
 import 'completion_meter.dart';
 import 'task_dialog.dart';
 import 'round_checkbox.dart';

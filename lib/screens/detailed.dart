@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'task.dart';
-import 'rowbuilder.dart';
-import 'completion_meter.dart';
-import 'task_dialog.dart';
+import 'package:task_progress/components/rowbuilder.dart';
+import 'package:task_progress/components/completion_meter.dart';
+import 'package:task_progress/components/task_dialog.dart';
+import 'package:task_progress/models/task.dart';
 
 class DetailedView extends StatefulWidget {
   final task;

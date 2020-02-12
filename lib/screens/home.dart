@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
-import 'task.dart';
-import 'rowbuilder.dart';
-import 'task_dialog.dart';
+import 'package:task_progress/models/task.dart';
+import 'package:task_progress/components/rowbuilder.dart';
+import 'package:task_progress/components/task_dialog.dart';
 
 class HomePage extends StatefulWidget {
   @override 

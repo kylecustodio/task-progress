@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
-import 'style.dart';
+import 'package:task_progress/screens/home.dart';
+import 'package:task_progress/values/style.dart';
 
 void main() => runApp(MyApp());
 
